@@ -936,6 +936,9 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 * @see ConfigurableApplicationContext#SHUTDOWN_HOOK_THREAD_NAME
 	 * @see #close()
 	 * @see #doClose()
+	 *
+	 * 在JVM runtime中注册一个SpringContextShutdownHook，用于关闭context。
+	 * 委托实际的doClose()做实际的事情。
 	 */
 	@Override
 	public void registerShutdownHook() {
