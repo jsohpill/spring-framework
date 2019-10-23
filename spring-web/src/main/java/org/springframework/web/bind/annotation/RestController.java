@@ -38,6 +38,17 @@ import org.springframework.stereotype.Controller;
  * {@code RequestMappingHandlerMapping}-{@code RequestMappingHandlerAdapter}
  * pair which are the default in the MVC Java config and the MVC namespace.
  *
+ * 便利性注释本身由{@link Controller @Controller}和{@link ResponseBody @ResponseBody}进行注释。
+ * <p>
+ * 带有此批注的类型被视为控制器，其中{@link RequestMapping @RequestMapping}方法采用
+ * 默认情况下，{@link ResponseBody @ResponseBody}语义。
+ *
+ * <p> <b>注意：</b>如果合适，将处理{@code @RestController}
+ * {@code HandlerMapping}-{@code HandlerAdapter}对已配置，例如
+ * {@code RequestMappingHandlerMapping}-{@code RequestMappingHandlerAdapter}
+ * 对，它们是MVC Java配置和MVC名称空间中的默认值。
+ *
+ *
  * @author Rossen Stoyanchev
  * @author Sam Brannen
  * @since 4.0

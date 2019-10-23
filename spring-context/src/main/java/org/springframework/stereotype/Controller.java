@@ -32,6 +32,13 @@ import org.springframework.core.annotation.AliasFor;
  * It is typically used in combination with annotated handler methods based on the
  * {@link org.springframework.web.bind.annotation.RequestMapping} annotation.
  *
+ * 表示带注释的类是“控制器”（例如Web控制器）。
+ *
+ * <p>此注释用作{@link Component @Component}的特殊化，
+ * 允许通过类路径扫描自动检测实现类。
+ * 它通常与基于
+ * {@link org.springframework.web.bind.annotation.RequestMapping}注释。
+ *
  * @author Arjen Poutsma
  * @author Juergen Hoeller
  * @since 2.5
