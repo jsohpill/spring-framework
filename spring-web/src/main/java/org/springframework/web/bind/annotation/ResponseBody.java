@@ -29,6 +29,10 @@ import java.lang.annotation.Target;
  * <p>As of version 4.0 this annotation can also be added on the type level in
  * which case it is inherited and does not need to be added on the method level.
  *
+ * 指示方法返回值的注释应绑定到Web响应正文。 支持带注释的处理程序方法。
+ *
+ * <p>从版本4.0开始，此注释也可以在类型级别添加，在这种情况下，它是继承的，不需要在方法级别添加。
+ *f
  * @author Arjen Poutsma
  * @since 3.0
  * @see RequestBody
